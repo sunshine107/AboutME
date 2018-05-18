@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "AlexBrush";
+    src: url("./fonts/AlexBrush-Regular.ttf");
+ }
+ @font-face {
+    font-family: "alisandra";
+    src: url("./fonts/Alisandra.ttf");
+ }
+ @font-face {
+    font-family: "arabella";
+    src: url("./fonts/Arabella.ttf");
+ }
+ @font-face {
+    font-family: "NeueZierSchrift";
+    src: url("./fonts/NeueZierSchrift.ttf");
+ }
+
+ .card {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    border: 0;
+    font-weight: 400;
+}
+
+ .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
