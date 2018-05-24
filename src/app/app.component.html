@@ -102,42 +102,23 @@
         <hr class="hr-line hr-light-pink" style="width:80%">
     </h2>
     <div class="row">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="box">
-                            <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(63).jpg">
-                            <div class="box-content">
-                                <div class="inner-content">
-                                    <h3 class="title">Williamson</h3>
-                                    <span class="post">Web Developer</span>
-                                </div>
-                                <ul class="icon">
-                                    <li><a href="#"><i class="fa fa-search"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-link"></i></a></li>
-                                </ul>
-                            </div>
+        <div class="row">
+            <figure class="col-md-4 view zoom hoverable box P-5" *ngFor="let img of projects">
+                <div data-size="1600x1067">
+                    <img src={{img.url}} class="img-fluid z-depth-1">
+                </div>
+                <div class="box-content">
+                        <div class="inner-content">
+                            <h3 class="title">Williamson</h3>
+                            <span class="post">Web Developer</span>
                         </div>
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li><a href="#"><i class="fa fa-link"></i></a></li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-        <div class="container row">
-        <figure class="col-md-4 view zoom hoverable box" *ngFor="let img of projects">
-            <div data-size="1600x1067">
-                <img src={{img.url}} class="img-fluid z-depth-1">
-            </div>
-            <div class="box-content">
-                    <div class="inner-content">
-                        <h3 class="title">Williamson</h3>
-                        <span class="post">Web Developer</span>
-                    </div>
-                    <ul class="icon">
-                        <li><a href="#"><i class="fa fa-search"></i></a></li>
-                        <li><a href="#"><i class="fa fa-link"></i></a></li>
-                    </ul>
-                </div>
-        </figure>
-    </div>
+            </figure>
+        </div>
     </div>
 </div>
 <section>
