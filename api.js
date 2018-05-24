@@ -59,7 +59,7 @@ router.get('/graduate', function(req, res, next){
 var col_menuItems = db.collection('projects');
 // Get Todos
 router.get('/projects', function(req, res, next){
-    db.aboutMe.findOne(function(err, aboutMe){
+    db.aboutMe.findOne(function(err, projects){
         if(err){
            res.send(err);
         } else {

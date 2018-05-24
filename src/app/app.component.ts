@@ -48,7 +48,7 @@ export class AppComponent {
   //   "https://github.com/sunshine107/mypicures/blob/master/Downloads/untitled%20folder%202/myproject8.jpg?raw=true",
   //   "https://github.com/sunshine107/mypicures/blob/master/Downloads/untitled%20folder%202/myproject9.jpg?raw=true"
   // ];
-  projecturl:string[]=[];
+  projects:string[]=[];
   
 
   constructor(private dataService:DataService){}
@@ -78,8 +78,8 @@ export class AppComponent {
         console.log(this.skill);
       })
       this.dataService.getAllProjects().subscribe((projects)=>{
-        this.projecturl = projects;
-        console.log(this.projecturl);
+        this.projects = projects;
+        console.log(this.projects);
       })
 
     }
