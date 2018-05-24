@@ -56,6 +56,19 @@ router.get('/graduate', function(req, res, next){
     });
 });
 
+var col_menuItems = db.collection('projects');
+// Get Todos
+router.get('/projects', function(req, res, next){
+    db.aboutMe.findOne(function(err, aboutMe){
+        if(err){
+           res.send(err);
+        } else {
+           res.json(projects);
+        }
+    });
+});
+
+
 var col_menuItems = db.collection('skill');
 // Get Todos
 router.get('/skill', function(req, res, next){

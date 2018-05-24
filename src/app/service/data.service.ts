@@ -37,5 +37,9 @@ export class DataService {
     return this.http.get('/api/skill').pipe(map((res)=>{
       return res.json();}));
   }
+  getAllProjects(){
+    return this.http.get('/api/projects').pipe(map((res)=>{
+      return res.json();}));
+  }
 }
 
