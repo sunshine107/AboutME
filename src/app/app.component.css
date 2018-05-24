@@ -360,7 +360,6 @@ li {
     content: "";
     width: 30%;
     height: 200%;
-    background: linear-gradient(to right,rgba(0,0,0,0.9),transparent,rgba(0,0,0,0.9));
     position: absolute;
     top: -88%;
     left: 0;

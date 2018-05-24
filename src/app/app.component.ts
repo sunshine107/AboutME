@@ -37,17 +37,7 @@ export class AppComponent {
   skill:Menu[] = [];
   myContact:Mycontact[] = [];
   temp:string="https://github.com/sunshine107/AboutME/blob/master/src/images/myFace.png?raw=true";
-  // projecturl:string[]=[
-  //   "https://github.com/sunshine107/mypicures/blob/master/Downloads/untitled%20folder%202/myproject1.jpg?raw=true",
-  //   "https://github.com/sunshine107/mypicures/blob/master/Downloads/untitled%20folder%202/myproject2.jpg?raw=true",
-  //   "https://github.com/sunshine107/mypicures/blob/master/Downloads/untitled%20folder%202/myproject3.jpg?raw=true",
-  //   "https://github.com/sunshine107/mypicures/blob/master/Downloads/untitled%20folder%202/myproject4.jpg?raw=true",
-  //   "https://github.com/sunshine107/mypicures/blob/master/Downloads/untitled%20folder%202/myproject5.jpg?raw=true",
-  //   "https://github.com/sunshine107/mypicures/blob/master/Downloads/untitled%20folder%202/myproject6.jpg?raw=true",
-  //   "https://github.com/sunshine107/mypicures/blob/master/Downloads/untitled%20folder%202/myproject7.jpg?raw=true",
-  //   "https://github.com/sunshine107/mypicures/blob/master/Downloads/untitled%20folder%202/myproject8.jpg?raw=true",
-  //   "https://github.com/sunshine107/mypicures/blob/master/Downloads/untitled%20folder%202/myproject9.jpg?raw=true"
-  // ];
+
   projects:string[]=[];
   
 
