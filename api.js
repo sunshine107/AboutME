@@ -46,12 +46,12 @@ router.get('/aboutMe', function(req, res, next){
 
 var col_menuItems = db.collection('mycontact');
 // Get Todos
-router.get('/aboutMe', function(req, res, next){
+router.get('/mycontact', function(req, res, next){
     db.mycontact.findOne(function(err, mycontact){
         if(err){
            res.send(err);
         } else {
-           res.json(aboutMe);
+           res.json(mycontact);
         }
     });
 });
