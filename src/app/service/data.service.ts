@@ -41,5 +41,9 @@ export class DataService {
     return this.http.get('/api/projects').pipe(map((res)=>{
       return res.json();}));
   }
+  getmycontact(){
+    return this.http.get('/api/mycontact').pipe(map((res)=>{
+      return res.json();}));
+  }
 }
 

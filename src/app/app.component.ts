@@ -36,6 +36,7 @@ export class AppComponent {
   graduate:Graduate[] = [];
   skill:Menu[] = [];
   myContact:Mycontact[] = [];
+  mycontact:Mycontact;
   temp:string="https://github.com/sunshine107/AboutME/blob/master/src/images/myFace.png?raw=true";
 
   projects:string[]=[];
@@ -61,6 +62,11 @@ export class AppComponent {
       this.dataService.getAllGraduate().subscribe((graduate)=>{
         this.graduate = graduate;
         console.log(this.graduate);
+      })
+
+      this.dataService.getmycontact().subscribe((mycontact)=>{
+        this.mycontact = mycontact;
+        console.log(this.mycontact);
       })
 
       this.dataService.getAllMySkills().subscribe((skill)=>{
